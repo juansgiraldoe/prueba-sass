@@ -2,25 +2,90 @@ $primary-color: #FFEFE7;
 $secundary-color: #FFDAC6;
 $tertiary-color: #BABD8D;
 $primary-text-color: #7C6A0A;
+$background: #FA9500;
 $font-stack: 'IBM Plex Sans', sans-serif;
+$paragraph-size: 1.2em;
 
-body{
+*{
     margin: 0;
     padding: 0;
 }
 
-.navbar{
+body{
     background-color: $primary-color;
-    width: 100%;
-    height: 80px;
+    font-family: $font-stack;
 }
 
-main{
-    background-color: $primary-color;
+.navbar{
+    padding: 10px;
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-text-color;
+    align-items: center;
+    p{
+        font-size: 1.5em;
+        padding-left: 30px;
+        font-weight: 500;
+    }
+    .icons{
+        display: flex;
+        padding-right: 30px;
+        gap: 10px;
+        button{
+            background-color: none;
+            border-style: none;
+            background-color: transparent;
+        }
+    }
 }
+
+article{
+    color: $primary-text-color;
+    width: auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+        font-size: 3em;
+    }
+    p{
+        font-size: $paragraph-size;
+        padding: 0 20px 0 0;
+    }
+    button{
+        background-color: $background;
+        border-style: none;
+        width: 15vw;
+        padding: 10px 40px;
+        border-radius: 25px;
+        color: $primary-color;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .info-section{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+    }
+    .image-section{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: inherit;
+            border-radius: 20px;
+        }
+    }
+}
+
 
 footer{
-    $background: #FA9500;
     background-color: $background;
     width: 100%;
 }
