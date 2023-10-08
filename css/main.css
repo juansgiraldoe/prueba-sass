@@ -26,7 +26,10 @@ body {
 .navbar .icons {
   display: flex;
   padding-right: 30px;
-  gap: 10px;
+  gap: 18px;
+}
+.navbar .icons button {
+  cursor: pointer;
 }
 .navbar .icons button {
   background: none;
@@ -124,6 +127,9 @@ section .healthcare .card-section .product-card .icon-card, section .furtniture 
   justify-content: end;
   padding: 10px 0 6px;
 }
+section .healthcare .card-section .product-card .icon-card:hover, section .furtniture .card-section .product-card .icon-card:hover {
+  cursor: pointer;
+}
 section .healthcare .card-section .product-card figure img, section .furtniture .card-section .product-card figure img {
   width: 100%;
   border-radius: 10px;
@@ -136,7 +142,97 @@ section .furtniture .card-section .product-card {
   color: #FFEFE7;
 }
 
+.info-business-section {
+  padding: 90px 0 45px;
+}
+.info-business-section .about-us h2 {
+  font-weight: bold;
+}
+.info-business-section .about-us .mission-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 30px;
+}
+.info-business-section .about-us .mission-section .earth, .info-business-section .about-us .mission-section .innovation {
+  display: flex;
+  gap: 30px;
+  width: 40%;
+  align-items: center;
+}
+.info-business-section .about-us .mission-section .earth img, .info-business-section .about-us .mission-section .innovation img {
+  width: 20%;
+}
+.info-business-section .about-us .mission-section .earth p, .info-business-section .about-us .mission-section .innovation p {
+  color: #e86424;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.info-business-section .gallery h2 {
+  font-weight: bold;
+}
+.info-business-section .gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0;
+}
+.info-business-section .gallery img {
+  width: 25vw;
+  height: 45vh;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.2s;
+}
+.info-business-section .gallery img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+.info-business-section .location {
+  color: #FA9500;
+  background-color: #FFEFE7;
+  padding: 60px 30px;
+}
+.info-business-section .location figure {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+.info-business-section .location figure img {
+  width: 100%;
+}
+.info-business-section .location .description-location h4 {
+  font-size: 1.32em;
+  padding-bottom: 15px;
+}
+.info-business-section .location .description-location p {
+  font-size: 1.2em;
+}
+
 footer {
+  color: #FFEFE7;
   background-color: #FA9500;
   width: 100%;
+  padding: 30px 0 15px;
+}
+footer h3 {
+  padding-bottom: 30px;
+  font-size: 1.32em;
+}
+footer p {
+  font-size: 1.2em;
+  display: block;
+}
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer section img {
+  width: 25px;
 }/*# sourceMappingURL=main.css.map */
